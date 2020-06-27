@@ -54,9 +54,6 @@ def check_win():
 	else:
 		return
 
-def ins():
-	messagebox.showinfo("Instructions", "INSTRUCTIONS\n1. The game is played on a grid that's 3 squares by 3 squares.\n2. Player 1 is X, Player 2 is O. Players take turns putting their marks in empty squares.\n3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.\n4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.")
-
 def clicked(n):
 	global i
 	if n==1:
@@ -150,6 +147,9 @@ def clicked(n):
 			status[n-1]=0
 		i+=1
 	check_win()
+
+def ins():
+	messagebox.showinfo("Instructions", "INSTRUCTIONS\n1. The game is played on a grid that's 3 squares by 3 squares.\n2. Player 1 is X, Player 2 is O. Players take turns putting their marks in empty squares.\n3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.\n4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.")
 
 
 player_1 = Label(root, text="Player 1", anchor=W, font=("Verdana", 10))
